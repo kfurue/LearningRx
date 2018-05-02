@@ -14,6 +14,10 @@
 		B9590CC8208411DA008F6BD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9590CC6208411DA008F6BD2 /* LaunchScreen.storyboard */; };
 		B9590CD3208411DB008F6BD2 /* reactiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9590CD2208411DB008F6BD2 /* reactiveTests.swift */; };
 		B9590CDE208411DB008F6BD2 /* reactiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9590CDD208411DB008F6BD2 /* reactiveUITests.swift */; };
+		B98F5B8F208CAA0000235E1B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B1C9482086B7080082C282 /* RxCocoa.framework */; };
+		B98F5B90208CAA0000235E1B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B1C9472086B7080082C282 /* RxSwift.framework */; };
+		B98F5B91208CAA6300235E1B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B1C9482086B7080082C282 /* RxCocoa.framework */; };
+		B98F5B92208CAA6300235E1B /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B1C9462086B7080082C282 /* RxTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98F5B8F208CAA0000235E1B /* RxCocoa.framework in Frameworks */,
+				B98F5B90208CAA0000235E1B /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98F5B91208CAA6300235E1B /* RxCocoa.framework in Frameworks */,
+				B98F5B92208CAA6300235E1B /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +525,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = reactiveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -537,6 +549,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = reactiveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
